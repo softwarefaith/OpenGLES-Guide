@@ -1,6 +1,10 @@
 #OpenGLES-理论准备
 
 
+GitHub地址
+
+<https://github.com/softwarefaith/OpenGLES-Guide/tree/master>
+
 ###基础概念
 
 - GPU
@@ -101,7 +105,6 @@ OpenGL在内部就是一个状态机，函数调用会修改其内部的状态�
 
 　　矩阵堆栈可用于保存投影矩阵和模型视图矩阵。每种类型的堆栈只能用来容纳相应类型的矩阵。所使用的矩阵由当前矩阵模式(GL_MODELVIEW或GL_PROJECTION)所决定的。可用函数glPushMatrix()和glPopMatrix()使矩阵入栈或出栈。
 
- 
 
 　　矩阵堆栈的主要作用：一是在构建层次模型时，使用堆栈来遍历这些层次模型的树型数据结构；二是在进行绘制时可以回到先前的视图，而不需要我们重新计算绘制。
 　　

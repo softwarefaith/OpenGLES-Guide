@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		C93787DD1DA8E848004B6EDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C93787DC1DA8E848004B6EDC /* main.m */; };
 		C93787E01DA8E848004B6EDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C93787DF1DA8E848004B6EDC /* AppDelegate.m */; };
-		C93787E31DA8E848004B6EDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93787E21DA8E848004B6EDC /* ViewController.m */; };
 		C93787E61DA8E848004B6EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93787E41DA8E848004B6EDC /* Main.storyboard */; };
 		C93787E81DA8E848004B6EDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93787E71DA8E848004B6EDC /* Assets.xcassets */; };
 		C93787EB1DA8E848004B6EDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93787E91DA8E848004B6EDC /* LaunchScreen.storyboard */; };
 		C93787F51DA8E856004B6EDC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93787F31DA8E856004B6EDC /* GLKit.framework */; };
 		C93787F61DA8E856004B6EDC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93787F41DA8E856004B6EDC /* OpenGLES.framework */; };
+		C96D66E91DAA3B3B00B91B6E /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96D66E81DAA3B3B00B91B6E /* OpenGLViewController.m */; };
+		C96D66EB1DAA409900B91B6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96D66EA1DAA409900B91B6E /* CoreGraphics.framework */; };
+		C96D66ED1DAA40A100B91B6E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96D66EC1DAA40A100B91B6E /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,14 +24,16 @@
 		C93787DC1DA8E848004B6EDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C93787DE1DA8E848004B6EDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C93787DF1DA8E848004B6EDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C93787E11DA8E848004B6EDC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C93787E21DA8E848004B6EDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C93787E51DA8E848004B6EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C93787E71DA8E848004B6EDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C93787EA1DA8E848004B6EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C93787EC1DA8E848004B6EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93787F31DA8E856004B6EDC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		C93787F41DA8E856004B6EDC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C96D66E71DAA3B3B00B91B6E /* OpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
+		C96D66E81DAA3B3B00B91B6E /* OpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
+		C96D66EA1DAA409900B91B6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C96D66EC1DAA40A100B91B6E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96D66ED1DAA40A100B91B6E /* QuartzCore.framework in Frameworks */,
+				C96D66EB1DAA409900B91B6E /* CoreGraphics.framework in Frameworks */,
 				C93787F51DA8E856004B6EDC /* GLKit.framework in Frameworks */,
 				C93787F61DA8E856004B6EDC /* OpenGLES.framework in Frameworks */,
 			);
@@ -48,6 +54,8 @@
 		C93787CF1DA8E848004B6EDC = {
 			isa = PBXGroup;
 			children = (
+				C96D66E71DAA3B3B00B91B6E /* OpenGLViewController.h */,
+				C96D66E81DAA3B3B00B91B6E /* OpenGLViewController.m */,
 				C93787DA1DA8E848004B6EDC /* OpenGL-ES-000 */,
 				C93787D91DA8E848004B6EDC /* Products */,
 				C93787F21DA8E856004B6EDC /* Frameworks */,
@@ -67,8 +75,6 @@
 			children = (
 				C93787DE1DA8E848004B6EDC /* AppDelegate.h */,
 				C93787DF1DA8E848004B6EDC /* AppDelegate.m */,
-				C93787E11DA8E848004B6EDC /* ViewController.h */,
-				C93787E21DA8E848004B6EDC /* ViewController.m */,
 				C93787E41DA8E848004B6EDC /* Main.storyboard */,
 				C93787E71DA8E848004B6EDC /* Assets.xcassets */,
 				C93787E91DA8E848004B6EDC /* LaunchScreen.storyboard */,
@@ -89,6 +95,8 @@
 		C93787F21DA8E856004B6EDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C96D66EC1DAA40A100B91B6E /* QuartzCore.framework */,
+				C96D66EA1DAA409900B91B6E /* CoreGraphics.framework */,
 				C93787F31DA8E856004B6EDC /* GLKit.framework */,
 				C93787F41DA8E856004B6EDC /* OpenGLES.framework */,
 			);
@@ -166,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C93787E31DA8E848004B6EDC /* ViewController.m in Sources */,
+				C96D66E91DAA3B3B00B91B6E /* OpenGLViewController.m in Sources */,
 				C93787E01DA8E848004B6EDC /* AppDelegate.m in Sources */,
 				C93787DD1DA8E848004B6EDC /* main.m in Sources */,
 			);
@@ -323,6 +331,7 @@
 				C93787F11DA8E848004B6EDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
