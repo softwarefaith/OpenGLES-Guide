@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>着色器(Shader) - luweimy - 博客园</title>
+<link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=03KQeESEmpLfzDqUo0NiWUg5Zd5aRam3JHBZTK05Wug1"/>
+<link type="text/css" rel="stylesheet" href="/blog/customcss/191337.css?v=FAq2tYvU2MRd3QWtsw2kYWGtT1g%3d"/>
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="/skins/BlackLowKey/bundle-BlackLowKey-mobile.css?v=sBdONNSxnB-7yzkTMuAuUF0ya3ScUydvubUn3kloJ_w1"/>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/luweimy/rss"/>
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/luweimy/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/luweimy/wlwmanifest.xml"/>
+<script src="//common.cnblogs.com/script/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'luweimy', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="/bundles/blog-common.js?v=hH1lCMV8WaIu271Nx7jPuv36TENW9-RsSxziLxUpjtc1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+<!--PageBeginHtml Block Begin-->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+
+    	<!--
+    	<a id="forkme_banner" href="https://github.com/Luweimy">View on GitHub</a>
+    	-->
+		<img src="https://raw.githubusercontent.com/Luweimy/luweimy.github.io/master/images/luweimy_logo.png" target="_blank" id="project_title">
+
+
+<div id="navigator">
+	<ul id="navList">
+		<li><a id="MyLinks1_MyHomeLink" class="menu" href="http://www.cnblogs.com/luweimy/">Home</a></li>
+		<li></li>
+		<li><a id="MyLinks1_ContactLink" class="menu" rel="nofollow" href="http://space.cnblogs.com/msg/send/luweimy">Contact</a></li>
+		<li><a id="MyLinks1_Syndication" class="menu" href="http://www.cnblogs.com/luweimy/rss">RSS</a>
+		<!--<a id="MyLinks1_XMLLink" class="aHeaderXML" href="http://www.cnblogs.com/luweimy/rss"><img src="http://www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+		<li><a id="MyLinks1_Admin" class="menu" rel="nofollow" href="https://github.com/Luweimy">Github</a></li>
+		<li><a id="MyLinks1_Admin" class="menu" rel="nofollow" href="http://i.cnblogs.com/">Manage</a></li>
+	</ul>
+</div>
+
+
+		<div id="searchdiv">
+			<form method="get" id="searchform" action="#" onsubmit=" 
+				var hrefvalue = this[0].value
+				window.open('http://www.baidu.com/s?wd=site:www.cnblogs.com luweimy '+ hrefvalue);
+				return false;
+			">
+
+				<input type="text" value="Search" name="wd" id="s" 
+					onfocus="if((this).value == 'Search'){(this).value=''}" 
+					onblur="if((this).value == ''){(this).value='Search'}">
+				<input type="submit" id="searchsubmit" class="searchsubmit_normal" value=" "
+					onmouseover="(this).id='searchsubmit_hover'" 
+					onmouseout="(this).id='searchsubmit'" >
+			</form>
+
+		</div>
+
+    </header>
+		
+
+</div>
+<!--PageBeginHtml Block End-->
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/luweimy/"><img id="blogLogo" src="/Skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/luweimy/">LUWEI</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li>
+<!----></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 51&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 11</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/luweimy/p/4206720.html">着色器(Shader)</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><h2>着色器(Shader)</h2>
+<ul>
+<li><strong>顶点着色器(Vertex shader)</strong></li>
+<li><strong>片段着色器(Fragment shader)</strong></li>
+<li>几何着色器(Geometry Shader)</li>
+<li>提供通用计算能力的着色器(Compute Shader)</li>
+</ul>
+<h2>顶点着色器(Vertex Shader)</h2>
+<p>每个顶点都要执行一次Vertex Shader。 它的功能就是把每个顶点在虚拟空间中的三维坐标变换为可以在 屏幕上显示的二维坐标，并带有用于z-buffer的深度信息。<br /><strong>可操作属性：</strong>位置、颜色、纹理坐标，但是不能创建新的顶点。&nbsp;</p>
+<p>主要完成以下工作：&nbsp;</p>
+<ul>
+<li>基于点操作的矩阵乘法位置变换&nbsp;</li>
+<li>根据光照公式计算每点的color值&nbsp;</li>
+<li>生成或者转换纹理坐标</li>
+
+</ul>
+<h3>顶点着色器的输入</h3>
+<ul>
+<li>attribute</li>
+<li>uniform</li>
+<li>sampler</li>
+
+</ul>
+<h4>attribute</h4>
+<p>attribute可以理解为针对每一个顶点的输入数据，如空间位置，法向量，纹理坐标以及顶点颜色。<br />它只在顶点着色器中才有，片段着色器中没有属性</p>
+<h4>uniform</h4>
+<p>uniform保存由应用程序传递给着色器的只读常量数据<br />在顶点着色器中，这些数据通常是变换矩阵，光照参数，颜色等。<br />由 uniform 修饰符修饰的变量属于全局变量，该全局性对顶点着色器与片段着色器均可见<br />若这两个着色器如果被连接到同一 个program Object，则它们共享同一份 uniform 全局变量集<br />因此如果在这两个着色器中都声明了同名的 uniform 变量，要保证这对同名变量完全相同：同名+同类型，因为它们实际是同一个变量<br />此外，uniform 变量存储在常量存储区</p>
+<h4>sampler</h4>
+<p>一种特殊的 uniform，在vertex shader中是可选的，用于呈现纹理。sampler 可用于顶点着色器和片段着色器。&nbsp;</p>
+<h3>顶点着色器输出</h3>
+<ul>
+<li>varying</li>
+<li>内建变量</li>
+
+</ul>
+<h4>varying</h4>
+<p>varying 变量用于存储顶点着色器的输出数据，当然也存储片元着色器的输入数据，varying 变量最终会在光栅化处理阶段被线性插值。<br />顶点着色器如果声明了 varying 变量，它必须被传递到片元着色器中才能进一步传递到下一阶段，因此顶点着色器中声明的 varying 变量都应在片元着色器中重新声明同名同类型的 varying 变量。</p>
+<h4>内建变量</h4>
+<p>如：gl_Position, gl_FrontFacing, gl_PointSize</p>
+<h2>片段着色器(Fragment Shader)</h2>
+<p>它计算每个像素的颜色和其它属性。它通过应用光照值、凹凸贴图，阴影，镜面高光，半透明等处理来计算像素的颜色并输出。它也可改变像素的深度(z-buffering)或在多个渲染目标被激活的状态下输出多种颜色。一个Pixel Shader不能产生复杂的效果，因为它只在一个像素上进行操作，而不知道场景的几何形状。</p>
+<h3>片段着色器的输入数据</h3>
+<ul>
+<li>varying</li>
+<li>uniform</li>
+<li>sampler</li>
+
+</ul>
+<h4>varying</h4>
+<p>顶点着色器阶段输出的 varying 变量在光栅化阶段被线性插值计算之后输出到片元着色器中作为它的输入，包含上述中的 gl_FragCoord，gl_FrontFacing 和 gl_PointCoord。</p>
+<h4>uniform</h4>
+<p>前面也已经讲过，这里是用于片元着色器的常量，如雾化参数，纹理参数等</p>
+<h4>sampler</h4>
+<p>一种特殊的 uniform，用于呈现纹理</p>
+<p><strong>在片段着色器阶段只有唯一的 varying 输出变量-即内建变量：gl_FragColor</strong></p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2015-01-06 18:34</span> <a href='http://www.cnblogs.com/luweimy/'>luweimy</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=4206720" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(4206720);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=191337,cb_entryId=4206720,cb_blogApp=currentBlogApp,cb_blogUserGuid='5ff7b9c9-4603-e411-8d02-90b11c0b17d6',cb_entryCreatedDate='2015/1/6 18:34:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<div id='ad_c1' class='c_ad_block'></div>
+<div id='under_post_news'></div>
+<div id='ad_c2' class='c_ad_block'></div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2016 luweimy
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+<!--PageEndHtml Block Begin-->
+<div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Copyright ©2014 luweimy </p>
+      </footer>
+    </div>
+<!--PageEndHtml Block End-->
+</body>
+</html>
