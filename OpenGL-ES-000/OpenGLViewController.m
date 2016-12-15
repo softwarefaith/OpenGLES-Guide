@@ -44,6 +44,7 @@ static const SceneVertex vertices[] = {
     GLKView *view  = (GLKView *)self.view;
     view.delegate = self;
     
+
     //  创建OpenGL ES 2.0  环境
     view.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     [EAGLContext setCurrentContext:view.context];
@@ -59,6 +60,7 @@ static const SceneVertex vertices[] = {
     //缓存
     glGenBuffers(1, &vertexBufferID);
     glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
+    
     
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 

@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GLSL基础 - luweimy - 博客园</title>
+<link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=03KQeESEmpLfzDqUo0NiWUg5Zd5aRam3JHBZTK05Wug1"/>
+<link type="text/css" rel="stylesheet" href="/blog/customcss/191337.css?v=FAq2tYvU2MRd3QWtsw2kYWGtT1g%3d"/>
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="/skins/BlackLowKey/bundle-BlackLowKey-mobile.css?v=sBdONNSxnB-7yzkTMuAuUF0ya3ScUydvubUn3kloJ_w1"/>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/luweimy/rss"/>
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/luweimy/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/luweimy/wlwmanifest.xml"/>
+<script src="//common.cnblogs.com/script/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'luweimy', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="/bundles/blog-common.js?v=hH1lCMV8WaIu271Nx7jPuv36TENW9-RsSxziLxUpjtc1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+<!--PageBeginHtml Block Begin-->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+
+    	<!--
+    	<a id="forkme_banner" href="https://github.com/Luweimy">View on GitHub</a>
+    	-->
+		<img src="https://raw.githubusercontent.com/Luweimy/luweimy.github.io/master/images/luweimy_logo.png" target="_blank" id="project_title">
+
+
+<div id="navigator">
+	<ul id="navList">
+		<li><a id="MyLinks1_MyHomeLink" class="menu" href="http://www.cnblogs.com/luweimy/">Home</a></li>
+		<li></li>
+		<li><a id="MyLinks1_ContactLink" class="menu" rel="nofollow" href="http://space.cnblogs.com/msg/send/luweimy">Contact</a></li>
+		<li><a id="MyLinks1_Syndication" class="menu" href="http://www.cnblogs.com/luweimy/rss">RSS</a>
+		<!--<a id="MyLinks1_XMLLink" class="aHeaderXML" href="http://www.cnblogs.com/luweimy/rss"><img src="http://www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+		<li><a id="MyLinks1_Admin" class="menu" rel="nofollow" href="https://github.com/Luweimy">Github</a></li>
+		<li><a id="MyLinks1_Admin" class="menu" rel="nofollow" href="http://i.cnblogs.com/">Manage</a></li>
+	</ul>
+</div>
+
+
+		<div id="searchdiv">
+			<form method="get" id="searchform" action="#" onsubmit=" 
+				var hrefvalue = this[0].value
+				window.open('http://www.baidu.com/s?wd=site:www.cnblogs.com luweimy '+ hrefvalue);
+				return false;
+			">
+
+				<input type="text" value="Search" name="wd" id="s" 
+					onfocus="if((this).value == 'Search'){(this).value=''}" 
+					onblur="if((this).value == ''){(this).value='Search'}">
+				<input type="submit" id="searchsubmit" class="searchsubmit_normal" value=" "
+					onmouseover="(this).id='searchsubmit_hover'" 
+					onmouseout="(this).id='searchsubmit'" >
+			</form>
+
+		</div>
+
+    </header>
+		
+
+</div>
+<!--PageBeginHtml Block End-->
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/luweimy/"><img id="blogLogo" src="/Skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/luweimy/">LUWEI</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li>
+<!----></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 51&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 11</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/luweimy/p/4208570.html">GLSL基础</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><h1>GLSL基础</h1>
+<p>OpenGL Shading Language GLSL作为一种着色语言是纯粹的和GPU打交道的计算机语言。<br />因为GPU是多线程并行处理器，所以GLSL直接面向SIMD模型的多线程计算。<br />GLSL编写的着色器函数是对每个数据同时执行的。<br />每个顶点都会由顶点着色器中的算法处理，每个像素也都会由片段着色器中的算法处理。<br />因此，初学者在编写自己的着色器时，需要考虑到SIMD的并发特性，并用并行计算的思路来思考问题。&nbsp;</p>
+<p><em>最常见用法是在顶点着色器里生成所需要的值，然后传给片断着色器用。&nbsp;&nbsp;</em><br /><strong>GLSL能做什么？</strong></p>
+<ul>
+<li>日以逼真的材质 -- 金属，岩石，木头，油漆等</li>
+<li>日益逼真的光照效果 -- 区域光和软阴影</li>
+<li>非现实材质 -- 美术效果，钢笔画，水墨画和对插画技术的模拟</li>
+<li>针对纹理内存的新用途</li>
+<li>更少的纹理访问&nbsp;</li>
+<li>图形处理 -- 选择，边缘钝化遮蔽和复杂混合</li>
+<li>动画效果 -- 关键帧插值，粒子系统</li>
+<li>用户可编程的反走样方法</li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p><strong>GLSL注意</strong></p>
+<ul>
+<li>GLSL支持函数重载</li>
+<li>GLSL不存在数据类型的自动提升，类型必须严格保持一致。</li>
+<li>GLSL不支持指针，字符串，字符，它基本上是一种处理数字数据的语言</li>
+<li>GLSL不支持联合、枚举类型、结构体位字段及按位运算符</li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+<h2>数据类型</h2>
+<hr />
+<p>GLSL有三种基本数据类型：float，int和bool，以及由这些数据类型组成的数组和结构体。<br />需要注意的是，GLSL并不支持指针。与C/C++不同的是，GLSL将向量和矩阵作为基本数据类型。<br />注意：GLSL不存在数据类型的自动提升，类型必须严格保持一致。</p>
+<h4>标量</h4>
+<ul>
+<li>float&nbsp;</li>
+<li>int&nbsp;</li>
+<li>bool&nbsp;</li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+<div class="cnblogs_code">
+<pre><span style="color: #800080;">42</span>   <span style="color: #008000;">//</span><span style="color: #008000;"> 十进制  </span>
+<span style="color: #800080;">042</span>  <span style="color: #008000;">//</span><span style="color: #008000;"> 八进制  </span>
+<span style="color: #800080;">0x2A</span> <span style="color: #008000;">//</span><span style="color: #008000;"> 十六进制</span></pre>
+</div>
+<p>&nbsp;</p>
+<p><em>GLSL不存在数据类型的自动提升，类型必须严格保持一致</em></p>
+<h4>矢量</h4>
+<p>矢量可以和标量甚至矩阵做加减乘除(必须符合规则)&nbsp;</p>
+<div class="cnblogs_code">
+<pre> vec2,  vec3,  vec4 <span style="color: #008000;">//</span><span style="color: #008000;"> 包含2/3/4个浮点数的矢量</span>
+ivec2, ivec3, ivec4 <span style="color: #008000;">//</span><span style="color: #008000;"> 包含2/3/4个整数的矢量</span>
+bvec2, bvec3, bvec4 <span style="color: #008000;">//</span><span style="color: #008000;"> 包含2/3/4个布尔值的矢量</span></pre>
+</div>
+<p>声明：</p>
+<div class="cnblogs_code">
+<pre>vec3 v;             <span style="color: #008000;">//</span><span style="color: #008000;">声明三维浮点型向量v  </span>
+v[<span style="color: #800080;">1</span>]=<span style="color: #800080;">3.0</span>;           <span style="color: #008000;">//</span><span style="color: #008000;">给向量v的第二个元素赋值  
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 下面两种等价</span>
+vec3 v = vec3(<span style="color: #800080;">0.6</span><span style="color: #000000;">);
+vec3 v </span>= vec3(<span style="color: #800080;">0.6</span>, <span style="color: #800080;">0.6</span>, <span style="color: #800080;">0.6</span>);</pre>
+</div>
+<p><em><strong>注意：</strong>&nbsp;除了用索引的方式外，还可以用选择运算符的方式来使用向量。选择运算符是对于向量的各个元素（最多为4个）约定俗成的名称，用一个小写拉丁字母来表示。根据向量表示对象的意义不同，可以使用以下选择运算符：<br />表示顶点可以用 (x、y、z、w)<br />表示颜色可以用 (r、g、b、a)<br />表示纹理坐标用 (s、t、r、q)<br />用户可以选择其中任意一种选择运算符，它们的作用是等效的。<br />也就是说，如果v是一个向量，那么&nbsp;<strong>v[0]</strong>、<strong>v.r</strong>、<strong>v.x&nbsp;</strong>和&nbsp;<strong>v.s&nbsp;</strong>都指的是向量v的第一个元素。&nbsp;&nbsp;</em><br />例如：</p>
+<div class="cnblogs_code">
+<pre>vec4 v1=vec4(<span style="color: #800080;">1.0</span>, <span style="color: #800080;">2.0</span>, <span style="color: #800080;">3.0</span>, <span style="color: #800080;">4.0</span>)；   <span style="color: #008000;">//</span><span style="color: #008000;">用构造函数的方式声明并初始化四维浮点型</span>
+<span style="color: #000000;">vec4 v2；  
+v2.xy</span>=v1.yz;                    <span style="color: #008000;">//</span><span style="color: #008000;">将v1的第二个和第三个元素复制到v2的第一个和第二个元素 </span>
+v2.z=<span style="color: #800080;">2.0</span>;                       <span style="color: #008000;">//</span><span style="color: #008000;">给v2的第三个元素赋值  </span>
+v2.xy=v1.yx;                    <span style="color: #008000;">//</span><span style="color: #008000;">将v1的头两个元素互换，再复制到v2的头两个元素中</span></pre>
+</div>
+<h4>矩阵</h4>
+<p>mat2, mat3, mat4 -- 2x2/3x3/4x4/的矩阵<br />矩阵是按列顺序组织的，先列后行 </p>
+<p>例如：</p>
+<div class="cnblogs_code">
+<pre>mat4 m;             <span style="color: #008000;">//</span><span style="color: #008000;">声明四维浮点型方阵m  </span>
+m[<span style="color: #800080;">2</span>][<span style="color: #800080;">3</span>]=<span style="color: #800080;">2.0</span>;        <span style="color: #008000;">//</span><span style="color: #008000;">给方阵的第三列、第四行元素赋值 
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 下面两种等价，初始化矩阵对角</span>
+mat2 m = mat2(<span style="color: #800080;">1.0</span><span style="color: #000000;">)
+mat2 m </span>= mat2(<span style="color: #800080;">1.0</span>, <span style="color: #800080;">0.0</span>, <span style="color: #800080;">0.0</span>, <span style="color: #800080;">1.0</span>);</pre>
+</div>
+<h4>取样器(Sampler)</h4>
+<p>纹理查找需要制定哪个纹理或者纹理单元将制定查找。</p>
+<div class="cnblogs_code">
+<pre>sampler1D           <span style="color: #008000;">//</span><span style="color: #008000;"> 访问一个一维纹理</span>
+sampler2D           <span style="color: #008000;">//</span><span style="color: #008000;"> 访问一个二维纹理           </span>
+sampler3D           <span style="color: #008000;">//</span><span style="color: #008000;"> 访问一个三维纹理</span>
+samplerCube         <span style="color: #008000;">//</span><span style="color: #008000;"> 访问一个立方贴图纹理</span>
+sampler1DShadow     <span style="color: #008000;">//</span><span style="color: #008000;"> 访问一个带对比的一维深度纹理</span>
+sampler2DShadow     <span style="color: #008000;">//</span><span style="color: #008000;"> 访问一个带对比的二维深度纹理</span></pre>
+</div>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">uniform sampler2D grass;
+
+vcc2 coord </span>= vec2(<span style="color: #800080;">100</span>, <span style="color: #800080;">100</span><span style="color: #000000;">);
+vec4 color </span>= texture2D(grass, coord);</pre>
+</div>
+<p>如果一个着色器要在程序里结合多个纹理，可以使用取样器数组</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">const</span> <span style="color: #0000ff;">int</span> tex_nums = <span style="color: #800080;">4</span><span style="color: #000000;">;
+uniform sampler2D textures[tex_nums];
+
+</span><span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> i = <span style="color: #800080;">0</span>; i &lt; tex_nums; ++<span style="color: #000000;">i) {
+    sampler2D tex </span>=<span style="color: #000000;"> textures[i];
+    </span><span style="color: #008000;">//</span><span style="color: #008000;"> todo ...</span>
+}</pre>
+</div>
+<h4>结构体：</h4>
+<p>这是唯一的用户定义类型</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">struct</span><span style="color: #000000;"> light  
+{  
+    vec3 position;  
+    vec3 color;  
+};  
+
+light ceiling_light;</span></pre>
+</div>
+<h4>数组</h4>
+<p>数组索引是从0开始的，而且没有指针概念</p>
+<div class="cnblogs_code">
+<pre><span style="color: #008000;">//</span><span style="color: #008000;"> 创建一个10个元素的数组  </span>
+vec4 points[<span style="color: #800080;">10</span><span style="color: #000000;">];  
+
+</span><span style="color: #008000;">//</span><span style="color: #008000;"> 创建一个不指定大小的数组</span>
+<span style="color: #000000;">vec4 points[]; 
+points[</span><span style="color: #800080;">2</span>] = vec4(<span style="color: #800080;">1.0</span>);  <span style="color: #008000;">//</span><span style="color: #008000;"> points现在大小为3</span>
+points[<span style="color: #800080;">7</span>] = vec4(<span style="color: #800080;">2.0</span>);  <span style="color: #008000;">//</span><span style="color: #008000;"> points现在大小为8</span></pre>
+</div>
+<h4>void</h4>
+<p>只能用于声明函数返回值</p>
+<h2>类型转换</h2>
+<p>必须明确地进行类型转换，不会自动类型提升</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">float</span> f = <span style="color: #800080;">2.3</span><span style="color: #000000;">; 
+</span><span style="color: #0000ff;">bool</span> b = <span style="color: #0000ff;">bool</span>(f); <span style="color: #008000;">//</span><span style="color: #008000;"> b is true</span></pre>
+</div>
+<h2>限定符</h2>
+<hr />
+<p>GLSL中有4个限定符（variable qualifiers）可供使用，它们限定了被标记的变量不能被更改的"范围"。&nbsp;</p>
+<ul>
+<li>const</li>
+<li>attribute</li>
+<li>uniform</li>
+<li>varying</li>
+</ul>
+<h4>const</h4>
+<p><strong><em>const和C++里差不多，定义不可变常量</em></strong><br />表示限定的变量在编译时不可被修改</p>
+<h4>attribute</h4>
+<p><strong><em>attribute是应用程序传给顶点着色器用的</em></strong><br />不允许声明时初始化<br />attribute限定符标记的是一种全局变量,该变量在顶点着色器中是只读（read-only）的，该变量被用作从OpenGL应用程序向顶点着色器中传递参数，因此该限定符仅能用于顶点着色器。</p>
+<h4>uniform</h4>
+<p><strong><em>unifrom一般是应用程序用于设定顶点着色器和片断着色器相关初始化值。</em></strong><br />不允许声明时初始化<br />uniform限定符标记的是一种全局变量,该变量对于一个图元（primitive）来说是不可更改的 它可以从OpenGL应用程序中接收传递来的参数。</p>
+<h4>varying</h4>
+<p><strong><em>varying用于传递顶点着色器的值给片断着色器</em></strong><br />不允许声明时初始化<br />它提供了从顶点着色器向片段着色器传递数据的方法，varying限定符可以在顶点着色器中定义变量，然后再传递给光栅化器，光栅化器对数据插值后，再将每个片段的值交给片段着色器。&nbsp;</p>
+<h2>限制</h2>
+<hr />
+<ul>
+<li>不能在if-else中声明变量</li>
+<li>用于判断的条件必须是bool类型(if,while,for...)</li>
+<li>(?:)操作符后两个参数必须类型相同</li>
+<li>不支持switch语句</li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+<div class="cnblogs_code">
+<pre>vec4 toonify(<span style="color: #0000ff;">in</span> <span style="color: #0000ff;">float</span><span style="color: #000000;"> intensify) 
+{
+    vec4 color;
+    color </span>= vec4(<span style="color: #800080;">0.8</span>,<span style="color: #800080;">0.8</span>,<span style="color: #800080;">0.8</span>,<span style="color: #800080;">0.8</span><span style="color: #000000;">)
+    </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> color;
+}</span></pre>
+</div>
+<h2>discard</h2>
+<hr />
+<p>discard关键字可以避免片段更新帧缓冲区，当流控制遇到这个关键字时，正在处理的片段就会被标记为丢</p>
+<h2>函数</h2>
+<hr />
+<ul>
+<li>函数名可以通过参数类型重载，但是和返回值类型无关</li>
+<li>所有参数必须完全匹配，参数不会自动</li>
+<li>函数不能被递归调用</li>
+<li>函数返回值不能是数组</li>
+</ul>
+<h4>函数参数标示符</h4>
+<p><strong>in</strong>: 进复制到函数中，但不返回的参数(默认)<br /><strong>out</strong>: 不将参数复制到函数中，但返回参数<br /><strong>inout</strong>: 复制到函数中并返回&nbsp;</p>
+<h2>混合操作</h2>
+<hr />
+<p>通过在选择器(.)后列出各分量名，就可以选择这些分量&nbsp;</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">vec4 v4;
+v4.rgba;    </span><span style="color: #008000;">//</span><span style="color: #008000;"> 得到vec4</span>
+v4.rgb;     <span style="color: #008000;">//</span><span style="color: #008000;"> 得到vec3</span>
+v4.b;       <span style="color: #008000;">//</span><span style="color: #008000;"> 得到float</span>
+v4.xy;      <span style="color: #008000;">//</span><span style="color: #008000;"> 得到vec2</span>
+v4.xgba;    <span style="color: #008000;">//</span><span style="color: #008000;"> 错误！分量名不是同一类</span>
+<span style="color: #000000;">
+v4.wxyz;    </span><span style="color: #008000;">//</span><span style="color: #008000;"> 打乱原有分量顺序</span>
+v4.xxyy;    <span style="color: #008000;">//</span><span style="color: #008000;"> 重复分量</span></pre>
+</div>
+<p>&nbsp;最后推荐一个GLSL编辑调试工具 <span style="color: #3366ff;"><strong>OpenGL Shader Builder&nbsp;</strong></span>(Mac OS X) 在苹果的开发者中心的下载Graphics Tools.dmp</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2015-01-07 15:25</span> <a href='http://www.cnblogs.com/luweimy/'>luweimy</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=4208570" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(4208570);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=191337,cb_entryId=4208570,cb_blogApp=currentBlogApp,cb_blogUserGuid='5ff7b9c9-4603-e411-8d02-90b11c0b17d6',cb_entryCreatedDate='2015/1/7 15:25:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<div id='ad_c1' class='c_ad_block'></div>
+<div id='under_post_news'></div>
+<div id='ad_c2' class='c_ad_block'></div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2016 luweimy
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+<!--PageEndHtml Block Begin-->
+<div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Copyright ©2014 luweimy </p>
+      </footer>
+    </div>
+<!--PageEndHtml Block End-->
+</body>
+</html>
