@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1255494d3a","applicationID":"15702971","transactionName":"e1daR0JWVV9RER9ZWkxdRxxDUVZE","queueTime":18,"applicationTime":227,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="description"  content="教程OpenGLES入门教程1-Tutorial01-GLKitOpenGLES入门教程2-Tutorial02-shader入门OpenGLES入门教程3-Tutorial03-三维变换这次我们用GLKit，更简单的实现图形变换、纹理贴图、着色、深度测试(代码在这)。OpenGLES系列教程在这里。OpenGLES系列教程的代码地址-你的star和fork是我的源动力，你的意见能让我走得更远。效果展示核心思路使用GLKit来进行图形变换、纹理贴图加载、深度测试，用GLKBaseEffec...">
+  <meta property="wb:webmaster" content="294ec9de89e7fadb" />
+  <meta property="qc:admins" content="104102651453316562112116375" />
+  <meta property="qc:admins" content="11635613706305617" />
+  <meta property="qc:admins" content="1163561616621163056375" />
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4" />
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI" />
+  <meta http-equiv="mobile-agent" content="format=html5; url=http://www.jianshu.com/p/ed7fb9555839">
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/3479955">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="iOS开发-OpenGL ES入门教程4" property="twitter:title">
+  <meta content="教程OpenGLES入门教程1-Tutorial01-GLKitOpenGLES入门教程2-Tutorial02-shader入门OpenGLES入门教程3-Tutorial03-三维变换这次我们用GLKit，更简单的实现图形变换、纹理贴图、着色、深度测试(代码在这)。OpenGLES系列教程在这里。OpenGLES系列教程的代码地址-你的star和fork是我的源动力，你的意见能让我走得更远。效果展示核心思路使用GLKit来进行图形变换、纹理贴图加载、深度测试，用GLKBaseEffec..." property="twitter:description">
+  <meta content="http://www.jianshu.com/p/ed7fb9555839" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="iOS开发-OpenGL ES入门教程4">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.jianshu.com/p/ed7fb9555839">
+  <meta property="og:description" content="教程OpenGLES入门教程1-Tutorial01-GLKitOpenGLES入门教程2-Tutorial02-shader入门OpenGLES入门教程3-Tutorial03-三维变换这次我...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/3479955" />
+  <meta property="al:ios:app_store_id" content="888237539" />
+  <meta property="al:ios:app_name" content="简书" />
+
+  <meta property="al:android:url" content="jianshu://notes/3479955" />
+  <meta property="al:android:package" content="com.jianshu.haruki" />
+  <meta property="al:android:app_name" content="简书" />
+  <!-- End -->
+
+  <title>iOS开发-OpenGL ES入门教程4 - 简书</title>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="+iVwuyubGw9D9HDpLXMvU7wJoOsEyLCR70HMn1w8UP1jmaCqhUI8ONickYHoqyxrasqu8EO4OuUz+9PPlsyy1A==" />
+  <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/base-00828532d00225531ad20ff45bf311ea.css" />
+
+    <link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/reading-note-a4d1e4bd26d83f631d58a76778118af6.css" />
+  <link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/base-read-mode-5f4051bc94fc595e8bc00821aae6c3e1.css" />
+  <script src="http://cdn-qn0.jianshu.io/assets/modernizr-613ea63b5aa2f0e2a1946e9c28c8eedb.js"></script>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if IE 8]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <!--[if lt IE 9]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <link href="http://baijii-common.b0.upaiyun.com/icons/favicon.ico" rel="icon">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/57-b426758a1fcfb30486f20fd073c3b8ec.png" sizes="57x57" />
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/72-feca4b183b9d29fd188665785dc7a7f1.png" sizes="72x72" />
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/76-ba757f1ad3421192ce7192170393d2b0.png" sizes="76x76" />
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/114-8dae53b3bcea3f06bb139e329d1edab3.png" sizes="114x114" />
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/120-fa315ee0177dba4c55d4f66d4129b47f.png" sizes="120x120" />
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/152-052f5799bec8fb3aa624bdc72ef5bd1d.png" sizes="152x152" />
+
+    <meta id="current_user_id" value="51735"></meta>
+    <meta id="current_user_slug" value="0945ed3ba10d"></meta>
+</head>
+
+<body class="post output zh cn mac reader-day-mode reader-font1   " data-js-module="note-show" data-locale="zh-CN">
+  
+  <div class="navbar navbar-jianshu shrink">
+  <div class="dropdown">
+    <a class="dropdown-toggle logo" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="javascript:void(0)">
+      简
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <li><a href="/"><i class="fa fa-home"></i> 首页</a></li>
+      <li><a href="/collections"><i class="fa fa-th"></i> 专题</a></li>
+        <li><a href="/timeline"><i class="fa fa-users"></i> 简友圈</a></li>
+        <li><a href="/writer#/"><i class="fa fa-pencil"></i> 写文章</a></li>
+    </ul>
+  </div>
+</div>
+<div class="navbar-user">
+    <a class="user avatar" data-toggle="dropdown" href="javascript:void(0)">
+      <img src="http://upload.jianshu.io/users/upload_avatars/51735/04e56cca5e8d?imageMogr/thumbnail/90x90/quality/100" alt="100" /> <b class="caret"></b>
+</a>    <ul class="dropdown-menu arrow-top" role="menu" aria-labelledby="dLabel">
+      <li>
+  <a href="/writer#/"><i class="fa fa-pencil"></i> 写文章</a>
+</li>
+<li>
+  <a target="_blank" href="/users/0945ed3ba10d"><i class="fa fa-user"></i> 我的主页</a>
+</li>
+  <li>
+    <a href="/favourites">
+      <i class="fa fa-heart"></i> 我喜欢的
+</a>  </li>
+  <li>
+    <a href="/bookmarks">
+      <i class="fa fa-bookmark"></i> 我的收藏
+</a>  </li>
+  <li>
+    <a href="/notifications">
+      <i class="fa fa-bell"></i> 提醒
+        <span class="label label-important">5</span>
+</a>  </li>
+  <li>
+    <a href="/chats">
+      <i class="fa fa-envelope"></i> 简信
+</a>  </li>
+  <li><a href="/settings"><i class="fa fa-cogs"></i> 设置</a></li>
+  <li>
+    <a href="/wallet">
+      <i class="fa fa-credit-card"></i> 钱包
+</a>  </li>
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="#"><i class="fa fa-question-circle"></i> 帮助</a>
+    <ul class="dropdown-menu">
+      <li><a href="http://www.jianshu.com/notebooks/547/latest" target="_blank">帮助中心</a></li>
+      <li><a target="_blank" href="/contact">联系我们</a></a></li>
+    </ul>
+  </li>
+  <li>
+    <a rel="nofollow" data-method="DELETE" href="/sign_out">
+      <i class="fa fa-sign-out"></i> 登 出
+</a>  </li>
+
+    </ul>
+    <a class="daytime set-view-mode pull-right" href="javascript:void(0)"><i class="fa fa-moon-o"></i></a>
+</div>
+<div class="navbar navbar-jianshu expanded">
+  <div class="dropdown">
+      <a class="active logo" role="button" data-original-title="个人主页" data-container="div.expanded" href="/">
+        <b>简</b><i class="fa fa-home"></i><span class="title">首页</span>
+</a>      <a data-toggle="tooltip" data-placement="right" data-original-title="专题" data-container="div.expanded" href="/collections">
+        <i class="fa fa-th"></i><span class="title">专题</span>
+</a>        <a data-toggle="tooltip" data-placement="right" data-original-title="简友圈" data-container="div.expanded" href="/timeline">
+          <i class="fa fa-users"></i><span class="title">简友圈</span>
+</a>        <a data-toggle="tooltip" data-placement="right" data-original-title="写文章" data-container="div.expanded" href="/writer#/">
+          <i class="fa fa-pencil"></i><span class="title">写文章</span>
+</a>    <a class="ad-selector" href="/apps">
+      <i class="fa fa-mobile"></i><span class="title">下载手机应用</span>
+</a>    <div class="ad-container ad-container-signed">
+      <div class="ad-pop">
+        <img class="ad-logo" src="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/228-0765f118055a1d942fc286fb55f37773.png" alt="228" />
+        <p class="ad-title">简书</p>
+        <p class="ad-subtitle">交流故事，沟通想法</p>
+        <img class="ad-qrcode" src="http://cdn-qn0.jianshu.io/assets/app-page/download-app-qrcode-053849fa25f9b44573ef8dd3c118a20f.png" alt="Download app qrcode" />
+        <div>
+          <a class="ad-link" href="https://itunes.apple.com/cn/app/jian-shu/id888237539?ls=1&amp;mt=8">iOS</a>·
+          <a class="ad-link" href="http://downloads.jianshu.io/apps/haruki/JianShu-2.0.0.apk">Android</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-user">
+      <a data-toggle="tooltip" data-placement="right" data-original-title="我的主页" data-container="div.expanded" href="/users/0945ed3ba10d">
+        <i class="fa fa-user"></i><span class="title">我的主页</span>
+</a>
+        <a data-toggle="tooltip" data-placement="right" data-original-title="我的收藏" data-container="div.expanded" href="/bookmarks">
+          <i class="fa fa-bookmark"></i><span class="title">我的收藏</span>
+</a>
+        <a data-toggle="tooltip" data-placement="right" data-original-title="提醒" data-container="div.expanded" href="/notifications">
+
+          <i id="notify-icon" class="fa fa-bell new-messages"></i><span class="title">提醒</span>
+          <span class="messages-amount" id="notify-amount">5</span>
+</a>
+        <a data-toggle="tooltip" data-placement="right" data-original-title="简信" data-container="div.expanded" href="/chats">
+            <i id="chat-message-icon" class="fa fa-envelope"></i><span class="title">简信</span>
+</a>
+        <a href='#view-mode-modal' data-toggle='modal'><i class="fa fa-font"></i><span class="title">显示模式</span></a>
+
+        <a data-toggle="tooltip" data-placement="right" data-original-title="设置" data-container="div.expanded" href="/settings">
+          <i class="fa fa-cogs"></i><span class="title">设置</span>
+</a>
+        <a data-toggle="tooltip" data-placement="right" data-original-title="登 出" data-container="div.expanded" rel="nofollow" data-method="delete" href="/sign_out">
+          <i class="fa fa-sign-out"></i><span class="title">登 出</span>
+</a>
+          </div>
+  </div>
+
+  
+      <div class="popover-wrap">
+       <div class="fixed-btn note-fixed-download" data-toggle="popover" data-placement="left" data-html="true" data-trigger="hover" data-content='<img src="http://cdn-qn0.jianshu.io/assets/app-page/note-qrcode-599086b03613e4f65dce8698fe9bcc99.png" alt="Note qrcode" />'>
+        <a class="qrcode" href="javascript:void(0)">
+          <img src="http://cdn-qn0.jianshu.io/assets/icon_qrcode-1f27688ec77df5a8c6c6ea70aa181874.png" alt="Icon qrcode" />
+          <div>简书手机版下载</div>
+</a>      </div>
+    </div>
+    <div class="fixed-btn">
+      <a class="go-top hide-go-top" href="#"> <i class="fa fa-angle-up"></i></a>
+      <a class="writer" href="/writer#/" data-toggle="tooltip" data-placement="left" title="写篇文章"><i class="fa fa-pencil"></i></a>
+    </div>
+
+
+  <div id="show-note-container">
+    
+<div class="post-bg" id="flag">
+  <div class="wrap-btn">
+    <!-- Notebook and collections button upper left -->
+      <div class="article-related pull-left">
+          <a class="collection-menu-btn" data-toggle="modal" data-target="#collection-menu" href="javascript:void(null);">
+            <i class="fa fa-th"></i>
+</a>          <a class="notebooks-menu-btn" data-toggle="modal" data-target="#notebooks-menu" href="javascript:void(null);"><i class="fa fa-list-ul"></i></a>
+        <div class="related-avatar-group activities"></div>
+      </div>
+    <!-- ******* -->
+
+      <a class="user avatar" data-toggle="dropdown" href="javascript:void(0)">
+    <img src="http://upload.jianshu.io/users/upload_avatars/51735/04e56cca5e8d?imageMogr/thumbnail/90x90/quality/100" alt="100" /> <b class="caret"></b>
+</a>  <ul class="dropdown-menu arrow-top" role="menu" aria-labelledby="dLabel">
+    <li>
+  <a href="/writer#/"><i class="fa fa-pencil"></i> 写文章</a>
+</li>
+<li>
+  <a target="_blank" href="/users/0945ed3ba10d"><i class="fa fa-user"></i> 我的主页</a>
+</li>
+  <li>
+    <a href="/favourites">
+      <i class="fa fa-heart"></i> 我喜欢的
+</a>  </li>
+  <li>
+    <a href="/bookmarks">
+      <i class="fa fa-bookmark"></i> 我的收藏
+</a>  </li>
+  <li>
+    <a href="/notifications">
+      <i class="fa fa-bell"></i> 提醒
+        <span class="label label-important">5</span>
+</a>  </li>
+  <li>
+    <a href="/chats">
+      <i class="fa fa-envelope"></i> 简信
+</a>  </li>
+  <li><a href="/settings"><i class="fa fa-cogs"></i> 设置</a></li>
+  <li>
+    <a href="/wallet">
+      <i class="fa fa-credit-card"></i> 钱包
+</a>  </li>
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="#"><i class="fa fa-question-circle"></i> 帮助</a>
+    <ul class="dropdown-menu">
+      <li><a href="http://www.jianshu.com/notebooks/547/latest" target="_blank">帮助中心</a></li>
+      <li><a target="_blank" href="/contact">联系我们</a></a></li>
+    </ul>
+  </li>
+  <li>
+    <a rel="nofollow" data-method="DELETE" href="/sign_out">
+      <i class="fa fa-sign-out"></i> 登 出
+</a>  </li>
+
+  </ul>
+
+
+    <!-- Buttons upper right -->
+      <div class="btn-group editor-article">
+                  <a class='daytime set-view-mode' href='javascript:void(0)'><i class="fa fa-moon-o"></i></a>
+        <span>
+          
+          
+          
+            <a href='javascript:void(null)' class='btn add-collection' data-toggle='modal' data-target='#contribute-modal'>
+              <i class="fa fa-plus"></i><span><span class="translation_missing" title="translation missing: zh-CN.notes.show.add_to_collection">Add To Collection</span></span>
+            </a>
+
+            <a data-type="json" data-mcomponent="easy-bookmark" class="bookmark" data-remote="true" rel="nofollow" data-method="post" href="/notes/3479955/bookmark">
+    <i class="fa fa-bookmark-o"></i><span>收藏文章</span>
+</a>
+        </span>
+      </div>
+    <!-- ******* -->
+  </div>
+
+  <div class="container">
+    <!-- Article activities for width under 768px -->
+    <div class="related-avatar-group activities"></div>
+      <div class="article">
+        <div class="preview">
+          <div class="author-info">
+              <div class="btn btn-small follow following" id="follow_user_1049769">
+    <a data-type="json" data-user-slug="815d10a4bdce" data-remote="true" rel="nofollow" data-method="post" href="/users/1049769/toggle_like"><i class="fa fa-check"></i>  <span>正在关注</span></a>
+  </div>
+
+            <a class="avatar" href="/users/815d10a4bdce">
+              <img src="http://upload.jianshu.io/users/upload_avatars/1049769/49572a9a5108?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>            <span class="label">
+                作者
+            </span>
+            <a class="author-name blue-link" href="/users/815d10a4bdce">
+              <span>落影loyinglin</span>
+</a>              <span data-toggle='tooltip' data-original-title='最后编辑于 2016.07.31 14:01'>2016.04.06 10:05*</span>
+            <div>
+              <span>写了105962字</span>，<span>被1974人关注</span>，<span>获得了1115个喜欢</span>
+            </div>
+          </div>
+          <h1 class="title">iOS开发-OpenGL ES入门教程4</h1>
+          <div class="meta-top">
+            <span class="wordage"></span>
+            <span class="views-count"></span>
+            <span class="comments-count"></span>
+            <span class="likes-count"></span>
+          </div>
+
+          <!-- Collection/Bookmark/Share for width under 768px -->
+          <div class="article-share"></div>
+          <!-- -->
+
+          <div class="show-content"><h3>教程</h3>
+<p><a href="http://www.jianshu.com/p/750fde1d8b6a" target="_blank">OpenGL ES入门教程1-Tutorial01-GLKit</a><br><a href="http://www.jianshu.com/p/ee597b2bd399" target="_blank">OpenGL ES入门教程2-Tutorial02-shader入门</a><br><a href="http://www.jianshu.com/p/87c5413c1fc7" target="_blank">OpenGL ES入门教程3-Tutorial03-三维变换</a><br> 这次我们用GLKit，更简单的实现<strong>图形变换、纹理贴图、着色、深度测试</strong>(<a href="https://github.com/loyinglin/LearnOpenGLES/tree/master/Tutorial04-GLKit%E8%BF%9B%E9%98%B6" target="_blank">代码在这</a>)。</p>
+<p>OpenGL ES系列教程在<a href="http://www.jianshu.com/notebooks/2135411/latest" target="_blank">这里</a>。<br>OpenGL ES系列教程的<a href="https://github.com/loyinglin/LearnOpenGLES" target="_blank">代码地址</a> - 你的star和fork是我的源动力，你的意见能让我走得更远。</p>
+<h3>效果展示</h3>
+<div class="image-package">
+<img src="http://upload-images.jianshu.io/upload_images/1049769-eee5c69d43d43167.gif?imageMogr2/auto-orient/strip" data-original-src="http://upload-images.jianshu.io/upload_images/1049769-eee5c69d43d43167.gif?imageMogr2/auto-orient/strip"><br><div class="image-caption"></div>
+</div>
+<h3>核心思路</h3>
+<p>使用GLKit来进行图形变换、纹理贴图加载、深度测试，用GLKBaseEffect来管理纹理贴图和进行着色。</p>
+<h3>具体细节</h3>
+<h4>1、顶点属性</h4>
+<pre><code>typedef NS_ENUM(GLint, GLKVertexAttrib)
+{
+    GLKVertexAttribPosition,
+    GLKVertexAttribNormal,
+    GLKVertexAttribColor,
+    GLKVertexAttribTexCoord0,
+    GLKVertexAttribTexCoord1
+} NS_ENUM_AVAILABLE(10_8, 5_0);</code></pre>
+<p>GLKEffects用到的顶点属性已经定义好，使用时直接用枚举量赋值。如下图，直接对顶点的位置、颜色、纹理坐标进行赋值。</p>
+<pre><code>    glEnableVertexAttribArray(GLKVertexAttribPosition);
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(GLfloat) * 8, (GLfloat *)NULL);
+    //顶点颜色
+    glEnableVertexAttribArray(GLKVertexAttribColor);
+    glVertexAttribPointer(GLKVertexAttribColor, 3, GL_FLOAT, GL_FALSE, 4 * 8, (GLfloat *)NULL + 3);
+
+    glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
+    glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE, 4 * 8, (GLfloat *)NULL + 6);</code></pre>
+<h4>2、纹理</h4>
+<p>在自定义shader中使用纹理，需要用CoreGraphics把图像转换成bitmapdata，再申请纹理内存，把图像数据传进去，最后还要释放bitmapdata。<br>在GLKit中，仅仅需要如下三行代码，就可以完成纹理的加载。</p>
+<pre><code>    //纹理
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"for_test" ofType:@"png"];
+    NSDictionary* options = [NSDictionary dictionaryWithObjectsAndKeys:@(1), GLKTextureLoaderOriginBottomLeft, nil];
+    GLKTextureInfo* textureInfo = [GLKTextureLoader textureWithContentsOfFile:filePath options:options error:nil];</code></pre>
+<p><code>GLKTextureLoaderOriginBottomLeft</code> 参数是避免纹理上下颠倒，原因是纹理坐标系和世界坐标系的原点不同。</p>
+<p>最后创建着色器，启用纹理，把刚刚创建的textureInfo的name赋值给着色器。</p>
+<pre><code>    //着色器
+    self.mEffect = [[GLKBaseEffect alloc] init];
+    self.mEffect.texture2d0.enabled = GL_TRUE;
+    self.mEffect.texture2d0.name = textureInfo.name;</code></pre>
+<h4>3、图形变换</h4>
+<p>在OpenGL ES里面，图形变换的表现形式就是矩阵操作，GLKit也提供了很多矩阵操作函数。</p>
+<pre><code>    //初始的投影
+    CGSize size = self.view.bounds.size;
+    float aspect = fabs(size.width / size.height);
+    GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(90.0), aspect, 0.1f, 10.f);
+    projectionMatrix = GLKMatrix4Scale(projectionMatrix, 1.0f, 1.0f, 1.0f);
+    self.mEffect.transform.projectionMatrix = projectionMatrix;
+
+    GLKMatrix4 modelViewMatrix = GLKMatrix4Translate(GLKMatrix4Identity, 0.0f, 0.0f, -2.0f);
+    self.mEffect.transform.modelviewMatrix = modelViewMatrix;</code></pre>
+<p><code>GLKMatrix4MakePerspective</code>是透视投影变换<br><code>GLKMatrix4Translate</code>是平移变换</p>
+<pre><code>/**
+ *  场景数据变化
+ */
+- (void)update {
+    GLKMatrix4 modelViewMatrix = GLKMatrix4Translate(GLKMatrix4Identity, 0.0f, 0.0f, -2.0f);
+
+    modelViewMatrix = GLKMatrix4RotateX(modelViewMatrix, self.mDegreeX);
+    modelViewMatrix = GLKMatrix4RotateY(modelViewMatrix, self.mDegreeY);
+    modelViewMatrix = GLKMatrix4RotateZ(modelViewMatrix, self.mDegreeZ);
+
+    self.mEffect.transform.modelviewMatrix = modelViewMatrix;
+}</code></pre>
+<p>在场景变换函数里面，<code>GLKMatrix4RotateY</code>是绕Y轴旋转，其他的分分别是绕X、Z轴旋转。</p>
+<h4>4、深度测试</h4>
+<p>在前面的教程介绍过，开启深度测试需要分配深度测试的缓冲区，并挂载到相应的帧缓冲区。<br>在GLKit代码中，深度测试的开启十分简单。<br>在新建上下文时调用<code>glEnable(GL_DEPTH_TEST);</code>开启深度测试。</p>
+<pre><code>    //新建OpenGL ES 上下文
+    self.mContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+
+    GLKView* view = (GLKView *)self.view;
+    view.context = self.mContext;
+    view.drawableColorFormat = GLKViewDrawableColorFormatRGBA8888;
+    view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
+
+    [EAGLContext setCurrentContext:self.mContext];
+    glEnable(GL_DEPTH_TEST);</code></pre>
+<p>在渲染场景时，<code>glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);</code> glClear参数加入<code>GL_DEPTH_BUFFER_BIT</code>即可。</p>
+<pre><code>/**
+ *  渲染场景代码
+ */
+- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
+    glClearColor(0.3f, 0.3f, 0.3f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+
+    [self.mEffect prepareToDraw];
+    glDrawElements(GL_TRIANGLES, self.mCount, GL_UNSIGNED_INT, 0);
+}</code></pre>
+<h3>总结</h3>
+<p>OpenGL ES的入门已经差不多，后面还有很多很多知识，需要时再学习即可。<br>总结这几篇教程花了一个星期左右。<br>学习过程中有几部分最难受：</p>
+<ul>
+<li>第一部分是OpenGL ES的顶点属性、纹理贴图，对顶点到图形的过程不理解，对OpenGL ES的数据缓存机制不了解，<strong><em>无知容易使人知难而退</em></strong>；</li>
+<li>第二部分是shader和glsl，glsl无法调试、编译信息不会查看、语法不懂等等，一个1.0 + 1都会报错，自己却莫名其妙，只能通过二分注释代码来定位问题，特别让人泄气；</li>
+<li>第三部分是OpenGL ES的三维图形变换和光照等，这部分更多的是数学知识和物理知识，代码一般都很简单；这部分比前面的都难，但是因为知道哪里缺失，虽然不懂，但是不慌，只是有点难受。</li>
+</ul>
+<p>最后的感想，<strong>计算机图形学和线性代数</strong>毕竟是基础，自己多花点时间学习，培养为核心竞争力非常不错。</p>
+</div>
+        </div>
+      </div>
+
+      <div class="visitor_edit">
+        <!-- further readings -->
+        <div id="further-readings" data-user-slug="0945ed3ba10d" data-user-nickname="践行者">
+          <div id="further-reading-line" class="hide further-reading-line"></div>
+          <ul id="further-readings-list" class="reading-list unstyled"></ul>
+          <div id="further-reading-new" class="reading-edit">
+              <a id="further-reading-new-prompt" href="javascript:void(null)">
+                <i class="fa fa-plus-circle"></i> 推荐拓展阅读
+</a>            <div id="further-reading-form"></div>
+          </div>
+        </div>
+        <div class="pull-right">
+          <!-- abuse report -->
+          <div id="abuse-report" class="report_article dropdown pull-right" data-js-module="report">
+              <a data-toggle="dropdown" href="#"><i class="fa fa-flag-o"></i> 举报文章</a>
+              <ul class="dropdown-menu arrow-top">
+                <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/notes/3479955/abuse_reports?type=ad">广告及垃圾信息</a></li>
+                <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/notes/3479955/abuse_reports?type=plagiarism">抄袭或未授权转载</a></li>
+                <li><a data-toggle="modal" data-url="/notes/3479955/abuse_reports" href="#report-modal">其他</a></li>
+              </ul>
+          </div>
+          <!-- copyright -->
+          <div class="author-copyright pull-right" data-toggle="tooltip" data-html="true" title="转载请联系作者获得授权，并标注“简书作者”。">
+            <a><i class="fa fa-copyright"></i> 著作权归作者所有</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reward / Support Author -->
+        <div class="support-author">
+          <p>如果你觉得我的文章有所帮助，可以请我喝瓶可乐，Or点个喜欢或关注。</p>
+            <a class="btn btn-pay" data-toggle="modal" href="#pay-modal">¥ 打赏支持</a>
+          <div class="avatar-list"></div>
+        </div>
+
+      <!-- article meta bottom -->
+      <div class="meta-bottom clearfix">
+        <!--  Like Button -->
+        <div class="like ">
+            <div class="like-button">
+              <a class="like-content" data-remote="true" rel="nofollow" data-method="post" href="/notes/3479955/like">
+                <i class="fa fa-heart-o"></i>  喜欢
+</a></div>          <span id="likes-count" data-toggle="tooltip" data-placement="right" title="查看所有喜欢的用户">
+            <i class="fa fa-spinner fa-pulse"></i>
+</span>        </div>
+        <!--  share group -->
+        <div class="share-group pull-right">
+          <a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/3479955/weibo/image_8b7b5a86f6c5.jpg&#39;, &#39;推荐 落影loyinglin 的文章《iOS开发-OpenGL ES入门教程4》（ 分享自 @简书 ）&#39;,&#39;http://www.jianshu.com/p/ed7fb9555839&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));" data-name="weibo">
+            <i class="fa fa-weibo"></i><span>分享到微博</span>
+          </a>
+          <a data-toggle="modal" href="#share-weixin-modal" data-name="weixin">
+            <i class="fa fa-weixin"></i><span>分享到微信</span>
+          </a>
+          <div class="more">
+            <a href="javascript:void(0)" data-toggle="dropdown">更多分享<i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu arrow-top">
+                <li><a href="http://cwb.assets.jianshu.io/notes/images/3479955/weibo/image_8b7b5a86f6c5.jpg" target="_blank" data-name="changweibo"><i class="fa fa-arrow-circle-o-down"></i> 下载长微博图片</a></li>
+                <li>
+                  <a data-name="tweibo" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;url=&#39;+e(&#39;http://www.jianshu.com/p/ed7fb9555839&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 落影loyinglin 的文章《iOS开发-OpenGL ES入门教程4》（ 分享自 @jianshuio ）&#39;),x=function(){if(!window.open(r,&#39;tweibo&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/tweibo.png" alt="Tweibo" /> 分享到腾讯微博
+</a>                </li>
+                <li>
+                  <a data-name="qzone" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;http://www.jianshu.com/p/ed7fb9555839&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 落影loyinglin 的文章《iOS开发-OpenGL ES入门教程4》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/qzone.png" alt="Qzone" /> 分享到QQ空间
+</a>                </li>
+                <li>
+                  <a data-name="twitter" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/ed7fb9555839&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 落影loyinglin 的文章《iOS开发-OpenGL ES入门教程4》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/twitter.png" alt="Twitter" /> 分享到Twitter
+</a>                </li>
+                <li>
+                  <a data-name="facebook" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/ed7fb9555839&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/facebook.png" alt="Facebook" /> 分享到Facebook
+</a>                </li>
+                <li>
+                  <a data-name="google_plus" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/ed7fb9555839&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/google_plus.png" alt="Google plus" /> 分享到Google+
+</a>                </li>
+                <li>
+                  <a data-name="douban" href="javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;http://www.jianshu.com/p/ed7fb9555839&#39;)+&#39;&amp;title=&#39;+e(&#39;iOS开发-OpenGL ES入门教程4&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/douban.png" alt="Douban" /> 分享到豆瓣
+</a>                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div id="share-weixin-modal" class="modal hide fade share-weixin-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body">
+    <h5>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h5>
+  </div>
+</div>
+
+      <div id="contribute-modal" tabindex="-1" class="arrow-top user-editor-actions modal hide fade">
+  <div class="modal-header">
+    <b>
+      添加到我管理的专题
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    </b>
+  </div>
+  <div class="modal-body">
+    <div class="search">
+      <input type="text" name="search_term" id="search_term" class="input-large search-query" placeholder="搜索我管理的专题" data-search-collections-url="/collections/search?note_id=3479955" />
+    </div>
+    <ul class="add-list"></ul>
+  </div>
+</div>
+
+      <div id="notebooks-menu" class="panel notebooks-menu arrow-top modal hide fade"><img class="loader-tiny" src="http://baijii-common.b0.upaiyun.com/loaders/tiny.gif" alt="Tiny" /></div>
+      <div id="collection-menu" class="panel collection-menu arrow-top modal hide fade"><img class="loader-tiny" src="http://baijii-common.b0.upaiyun.com/loaders/tiny.gif" alt="Tiny" /></div>
+      
+      <div id="likes-modal" class="modal modal_new support_list-modal fullscreen hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>喜欢的用户</h3>
+      </div>
+      <div class="modal-body">
+        <ul class="unstyled users">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Comments -->
+    <div id="comments" class="comment-list clearfix">
+        <div class="comment-head clearfix">
+          6条评论
+          <span class="order">
+            （
+            <a data-order="asc" class="active" href="javascript:void(0)">按时间正序</a>·
+            <a data-order="desc" href="javascript:void(0)">按时间倒序</a>·
+            <a data-order="likes_count" href="javascript:void(0)">按喜欢排序</a>
+            ）
+          </span>
+            <a href="javascript:void(null)" class="goto-comment pull-right"><i class="fa fa-pencil"></i>添加新评论</a>
+        </div>
+        <div id="comment-list">
+          <img class="loader-tiny" src="http://baijii-common.b0.upaiyun.com/loaders/tiny.gif" alt="Tiny" />
+        </div>
+          <form class="new_comment" id="new_comment" data-type="json" action="/notes/3479955/comments" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+    <div class="comment-text">
+      <textarea maxlength="2000" placeholder="写下你的评论…" class="mousetrap" name="comment[content]" id="comment_content">
+</textarea>
+      <div>
+        <input type="submit" name="commit" value="发 表" class="btn btn-info" data-disable-with="提交中..." />
+          <div class="emoji">
+    <a href="#emoji-modal" data-toggle="modal"><i class="fa fa-smile-o"></i></a>
+    <div id="emoji-modal" class="emoji-modal arrow-top hide" tabindex="-1" aria-hidden="true">
+      <ul id="emojiTab" class="emoji-nav-tabs modal-header">
+          <li class="active"><a href="#emoji-pane-1" data-toggle="tab">1</a></li>
+          <li class=""><a href="#emoji-pane-2" data-toggle="tab">2</a></li>
+          <li class=""><a href="#emoji-pane-3" data-toggle="tab">3</a></li>
+          <li class=""><a href="#emoji-pane-4" data-toggle="tab">4</a></li>
+      </ul>
+      <div id="emojiTabContent" class="tab-content">
+          <div class="tab-pane fade active in" id="emoji-pane-1">
+          <ul>
+          </ul>
+        </div>
+          <div class="tab-pane fade  in" id="emoji-pane-2">
+          <ul>
+          </ul>
+        </div>
+          <div class="tab-pane fade  in" id="emoji-pane-3">
+          <ul>
+          </ul>
+        </div>
+          <div class="tab-pane fade  in" id="emoji-pane-4">
+          <ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+          <span class="hotkey">⌘+Return 发表</span>
+        <span class="warning" style="display: none"><i class="fa fa-exclamation-circle"></i><span class="warning-text"></span></span>
+      </div>
+    </div>
+</form>
+    </div>
+    <!-- -->
+
+  </div>
+
+  <script type='application/json' data-name='note'>
+    {"id":3479955,"abbr":"教程OpenGLES入门教程1-Tutorial01-GLKitOpenGLES入门教程2-Tutorial02-shader入门OpenGLES入门教程3-Tutorial03-三维变换这次我们用GLKit，更简单的实现图形变换、纹理贴图、着色、深度测试(代码在这)。OpenGLES系列教程在这里。OpenGLES系列教程的代码地址-你的star和fork是我的源动力，你的意见能让我走得更远。效果展示核心思路使用GLKit来进行图形变换、纹理贴图加载、深度测试，用GLKBaseEffec...","slug":"ed7fb9555839","url":"http://www.jianshu.com/p/ed7fb9555839","image_url":"http://cwb.assets.jianshu.io/notes/images/3479955/weibo/image_8b7b5a86f6c5.jpg","wordage":1167,"has_further_readings":false,"views_count":1601,"likes_count":5,"comments_count":6,"rewards_total_count":0}
+  </script>
+
+  <script type='application/json' data-name='uuid'>
+    {"uuid":"c8d31bac-ac5f-4253-a9a4-81e614382146"}
+  </script>
+
+  <script type='application/json' data-name='author'>
+    {"id":1049769,"nickname":"落影loyinglin","slug":"815d10a4bdce","public_notes_count":72,"followers_count":1974,"total_likes_count":1115,"is_current_user":false,"is_signed_author":false}
+  </script>
+
+    <script type='application/json' data-name='current-user'>
+      {"id":51735,"slug":"0945ed3ba10d","nickname":"践行者","avatar_url":"http://upload.jianshu.io/users/upload_avatars/51735/04e56cca5e8d?imageMogr/thumbnail/90x90/quality/100","blocked_by_author":false,"blocked_user_ids":[],"balance_in_cent":0,"is_a_collection_editor":true}
+    </script>
+
+    <script type='application/json' data-name='comment-participants'>
+      []
+    </script>
+
+
+
+  <div class="include-collection">
+    <div class="content">
+
+      
+        <h5>被以下专题收入，发现更多相似内容：</h5>
+        <ul id="all-collections" class="unstyled collections-list">
+            <li>
+              <a class="avatar" href="/collection/bDHhpK"><img src="http://upload.jianshu.io/collections/images/47/%E9%A6%96%E9%A1%B5%E6%8A%95%E7%A8%BF.png?imageMogr2/auto-orient/strip|imageView2/2/w/180" alt="180" /></a>              <div class="collections-info">
+                <h5>
+                  <a href="/collection/bDHhpK">首页投稿</a>
+                </h5>
+                
+  <div class="btn btn-success follow" id=subscribe_collection_47>
+    <a data-type="json" data-collection-id="47" data-remote="true" rel="nofollow" data-method="post" href="/collections/47/subscribe">
+      <i class="fa fa-fw fa-plus"></i>  <span>添加关注</span>
+</a>    <span>147.7K</span>
+  </div>
+
+                <p class="description">玩转简书的第一步，从这个专题开始。
+
+想上首页热门榜么？好内容想被更多人看到么？来投稿吧！如果被拒也不要灰心哦～入选文章会进一个队...</p>
+                <p>
+                  <a class="blue-link" href="/collection/bDHhpK">126171篇文章</a> · 147730人关注
+                </p>
+              </div>
+            </li>
+            <li>
+              <a class="avatar" href="/collection/3233d1a249ca"><img src="http://upload.jianshu.io/collections/images/1276/162902612251cbd95971b82.png?imageMogr2/auto-orient/strip|imageView2/2/w/180" alt="180" /></a>              <div class="collections-info">
+                <h5>
+                  <a href="/collection/3233d1a249ca">iOS Developer</a>
+                </h5>
+                
+  <div class="btn follow following" id=subscribe_collection_1276>
+    <a data-type="json" data-collection-id="1276" data-remote="true" rel="nofollow" data-method="post" href="/collections/1276/unsubscribe">
+      <i class="fa fa-fw fa-check"></i>  <span>正在关注</span>
+</a>    <span>29.3K</span>
+  </div>
+
+                <p class="description">分享 iOS 开发的知识，解决大家遇到的问题，讨论iOS开发的前沿，欢迎大家投稿~</p>
+                <p>
+                  <a class="blue-link" href="/collection/3233d1a249ca">16952篇文章</a> · 29355人关注
+                </p>
+              </div>
+            </li>
+            <li>
+              <a class="avatar" href="/collection/b76f9973bf0f"><img src="http://upload.jianshu.io/collections/images/23033/562c11dfa9ec8a13e028c4c0f603918fa0ecc0e4.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/180" alt="180" /></a>              <div class="collections-info">
+                <h5>
+                  <a href="/collection/b76f9973bf0f">IOS个人开发</a>
+                </h5>
+                
+  <div class="btn btn-success follow" id=subscribe_collection_23033>
+    <a data-type="json" data-collection-id="23033" data-remote="true" rel="nofollow" data-method="post" href="/collections/23033/subscribe">
+      <i class="fa fa-fw fa-plus"></i>  <span>添加关注</span>
+</a>    <span>454</span>
+  </div>
+
+                <p class="description">收录最好的博客，和最好的资源</p>
+                <p>
+                  <a class="blue-link" href="/collection/b76f9973bf0f">244篇文章</a> · 454人关注
+                </p>
+              </div>
+            </li>
+        </ul>
+    </div>
+  </div>
+
+  <!-- Modal -->
+    <div class="modal pay-modal text-center hide fade" id="pay-modal">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  </div>
+  <form id="new_reward" class="new_reward" target="_blank" action="/notes/3479955/rewards" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="71oHMRCeRAzmjMQ7bGwEACZtYDO/rJnWSAmGk554Gw125tcgvkdjO33kJVOptAc48K5uKPjcE6KUs5nDVIj5JA==" />
+    <div class="modal-body">
+      <a href="/users/815d10a4bdce">
+        <div class="avatar"><img src="http://upload.jianshu.io/users/upload_avatars/1049769/49572a9a5108?imageMogr/thumbnail/90x90/quality/100" alt="100" /></div>
+</a>      <p><i class="fa fa-quote-left pull-left"></i>如果你觉得我的文章有所帮助，可以请我喝瓶可乐，Or点个喜欢或关注。<i class="fa fa-quote-right pull-right"></i></p>
+      <div class="main-inputs text-left">
+        <div class="control-group">
+          <label for="reward_amount">打赏金额</label><i class="fa fa-yen"></i>
+          <input value="2.00" type="text" name="reward[amount_in_yuan]" id="reward_amount_in_yuan" />
+        </div>
+        <div class="control-group message">
+          <textarea placeholder="给Ta留言" name="reward[message]" id="reward_message">
+</textarea>
+        </div>
+      </div>
+      <div class="choose-pay text-left">
+        <h5>选择支付方式：</h5>
+        <div>
+          <label for="reward_channel_alipay">
+            <input type="radio" value="alipay" checked="checked" name="reward[channel]" id="reward_channel_alipay" />
+            <span class="alipay-bg"></span>
+</label>
+          <label for="reward_channel_balance">
+            <input type="radio" value="balance" name="reward[channel]" id="reward_channel_balance" />
+            简书余额（ 余额：¥ 0.00 ）
+</label>
+          <label for="reward_channel_wx_pub_qr">
+            <input type="radio" value="wx_pub_qr" name="reward[channel]" id="reward_channel_wx_pub_qr" />
+            微信支付
+</label>        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button name="button" type="submit" class="btn btn-large btn-pay">立即支付</button>
+    </div>
+</form></div>
+
+    <div class="modal success-pay text-center hide fade" id="success-pay">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  </div>
+  <div class="modal-body">
+    <h3><i class="icon-ok"></i>打赏成功</h3>
+    <img src="http://cdn-qn0.jianshu.io/assets/complete-pay-25426877089eb23bd76d9d0e6aad89c1.png" alt="Complete pay" />
+  </div>
+  <div class="modal-footer">
+    <a class="blue-link" href="/wallet">查看打赏记录</a>
+  </div>
+</div>
+
+</div>
+
+  </div>
+  <div id="flash" class="hide"></div>
+  
+  <div id="view-mode-modal" tabindex="-1" class="modal hide read-modal" aria-hidden="false" data-js-module='view-mode-modal'>
+    <div class="btn-group change-background" data-toggle="buttons-radio">
+
+      <a class="btn btn-daytime active" data-mode="day" data-remote="true" rel="nofollow" data-method="put" href="/preferences?read_mode=day">
+        <i class="fa fa-sun-o"></i>
+</a>      <a class="btn btn-nighttime " data-mode="night" data-remote="true" rel="nofollow" data-method="put" href="/preferences?read_mode=night">
+        <i class="fa fa-moon-o"></i>
+</a>    </div>
+    <div class="btn-group change-font" data-toggle="buttons-radio">
+      <a class="btn font active" data-font="font1" data-remote="true" rel="nofollow" data-method="put" href="/preferences?default_font=font1">宋体</a>
+      <a class="btn font hei " data-font="font2" data-remote="true" rel="nofollow" data-method="put" href="/preferences?default_font=font2">黑体</a>
+    </div>
+    <div class="btn-group change-locale" data-toggle="buttons-radio">
+      <a class="btn font active" data-locale="zh-CN" data-remote="true" rel="nofollow" data-method="put" href="/preferences/set_locale?locale=zh-CN">简</a>
+      <a class="btn font hei " data-locale="zh-TW" data-remote="true" rel="nofollow" data-method="put" href="/preferences/set_locale?locale=zh-TW">繁</a>
+    </div>
+  </div>
+
+  <div id="report-modal" class="modal hide fade modal_report fullscreen" tabindex="-1" role="dialog"
+  aria-labelledby="reportModal" aria-hidden="true" data-js-module="report-modal">
+  <form id="report-form" data-type="json" action="javascript:void(0)" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="type" id="type" value="other" />
+
+    <div class="modal-header">
+      <b>举报原因</b>
+    </div>
+    <div class="modal-body">
+      <textarea name="content" id="content" maxlength="2000" placeholder="写下你的举报原因...">
+</textarea>
+    </div>
+    <div class="modal-footer">
+      <a class="btn" data-dismiss="modal" aria-hidden="true" href="javascript:void(0)">取消</a>
+      <input type="submit" name="commit" value="确认" class="btn btn-info" />
+    </div>
+</form></div>
+
+
+  <script src="http://cdn-qn0.jianshu.io/assets/base-90f2ea0f7da77d330f3fe2acdcf5d595.js"></script>
+  
+  <script src="http://cdn-qn0.jianshu.io/assets/reading-base-0028299ec0c770293c0f07e2f338b48f.js"></script>
+  <script src="http://cdn-qn0.jianshu.io/assets/reading/module_sets/note_show-cc5c20512664aad53acca20308dd4d1c.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35169517-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<div style="display:none">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1258679142&web_id=1258679142" language="JavaScript"></script>
+</div>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+</body>
+</html>
